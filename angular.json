@@ -116,6 +116,46 @@
           }
         }
       }
+    },
+    "NgxMatTypeahead": {
+      "root": "projects/ngx-mat-typeahead",
+      "sourceRoot": "projects/ngx-mat-typeahead/src",
+      "projectType": "library",
+      "prefix": "NgxMat",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-mat-typeahead/tsconfig.lib.json",
+            "project": "projects/ngx-mat-typeahead/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ngx-mat-typeahead/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-mat-typeahead/src/test.ts",
+            "tsConfig": "projects/ngx-mat-typeahead/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-mat-typeahead/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-mat-typeahead/tsconfig.lib.json",
+              "projects/ngx-mat-typeahead/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "MatTypeaheadLibrary"
