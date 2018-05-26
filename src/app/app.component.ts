@@ -7,6 +7,11 @@ import { AppService } from './app.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  // Paramteres for the input type are defined below. The url is generated using `json-server`.
+  // Please run your own instance of the json-server to use the the below url.
+  queryParam = 'q';
+  url = 'http://localhost:3000/countries';
+
   constructor(private appService: AppService) {}
 
   testFormGroup: FormGroup = new FormGroup({ country: new FormControl('') });

@@ -1,8 +1,8 @@
-<h3>Typeahead demo app using Angular Material</h3>
+<h3>NgxMatTypeahead demo app using Angular Material</h3>
 <div [formGroup]="testFormGroup">
   <mat-form-field>
-    <input matInput NgxMatTypeahead (filteredDataList)="getFilteredSuggestions($event)" formControlName="country" [matAutocomplete]="countryAuto"
-      placeholder="Choose Country">
+    <input matInput NgxMatTypeahead [apiURL]="url" [urlQueryParam]="queryParam" (filteredDataList)="getFilteredSuggestions($event)"
+      formControlName="country" [matAutocomplete]="countryAuto" placeholder="Choose Country">
     <mat-autocomplete #countryAuto="matAutocomplete">
       <mat-option *ngFor="let country of countries" [value]="country">
         {{country}}
