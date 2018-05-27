@@ -7,6 +7,7 @@
 * This library is part of MatTypeahead project and it is generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
 ## Installation
+TODO: Add npm i NgxMatTypeahead
 
 ## API
 
@@ -110,15 +111,16 @@ export class AppComponent implements OnInit {
 ```
 
 ## Demo
-TODO: Stackblitz link
+A simple Example can be found under `src/app` directory of this repository.
+TODO: For seeing the example on Stackblitz Click here.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server and running the demo app. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Build
+## Build the NgxMatTypeahead module
 
-Run `ng build NgxMatTypeahead` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build NgxMatTypeahead` to build the library. The build artifacts will be stored in the `dist/ngx-mat-typeahead` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
