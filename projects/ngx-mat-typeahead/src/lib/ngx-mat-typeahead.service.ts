@@ -28,14 +28,14 @@ export class NgxMatTypeaheadService {
 
   /**
    * This method configure the api call params, validates api method and makes http/jsonp call.
-   * @param {string} searchTerm - The search term coming from the the input.
-   * @param {string} apiURL - The URL that will be used to make API call.
-   * @param {string} urlQueryParam - The query parameter used in the URL.
-   * @param {object} urlParams - Any additional params as general object type of form {key: string, value: any}
-   * @param {string} apiMethod - GET, POST, etc. Default is `GET`
-   * @param {string} apiType - API method `http/jsonp`
-   * @param {string} callbackFuncName - callback function name.
-   * @returns {Observable<any>} - Returns the result of Observable type.
+   * @param searchTerm - The search term coming from the the input.
+   * @param apiURL - The URL that will be used to make API call.
+   * @param urlQueryParam - The query parameter used in the URL.
+   * @param urlParams - Any additional params as general object type of form {key: string, value: any}
+   * @param apiMethod - GET, POST, etc. Default is `GET`
+   * @param apiType - API method `http/jsonp`
+   * @param callbackFuncName - callback function name.
+   * @returns - Returns the result of Observable type.
    */
   makeApiRequest(
     searchTerm: string,
