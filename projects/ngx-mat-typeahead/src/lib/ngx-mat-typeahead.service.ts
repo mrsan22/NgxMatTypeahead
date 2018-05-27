@@ -20,10 +20,6 @@ export class NgxMatTypeaheadService {
     return inputSearchTerm.length > 0;
   }
 
-  isEscapeKey(event: KeyboardEvent): boolean {
-    return event.keyCode === Key.Escape;
-  }
-
   validateNonCharKeyCode(keyCode: number): boolean {
     return [Key.Enter, Key.Tab, Key.Shift, Key.ArrowLeft, Key.ArrowUp, Key.ArrowRight, Key.ArrowDown].every(
       codeKey => codeKey !== keyCode
