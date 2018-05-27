@@ -5,7 +5,7 @@
 * However, this directive can be used with `any other` autocomplete component.
 * It is developed using `Angular >=6.0.0` and its newly introduced `ng g library` schematics.
 * This library is part of MatTypeahead project and it is generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
-* Library location: projects/ngx-mat-typeahead directory of this repository.
+* Library location: `projects/ngx-mat-typeahead` directory of this repository.
 
 ## Examples/Demo
 
