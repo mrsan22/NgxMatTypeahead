@@ -1,6 +1,6 @@
 {
   "name": "ngx-mat-typeahead",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description":"A simple typeahead directive to be used with Angular Material input and matAutocomplete component.",
   "author": "Sanjiv Kumar (mr.san.kumar@gmail.com)",
   "repository": {
