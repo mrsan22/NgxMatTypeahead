@@ -13,11 +13,11 @@
 
 ## Installation
 
-`npm i NgxMatTypeahead`
+`npm i ngx-mat-typeahead`
 
 ## API
 
-`import { NgxMatTypeaheadModule } from 'NgxMatTypeahead'`<br>
+`import { NgxMatTypeaheadModule } from 'ngx-mat-typeahead'`<br>
 `selector: NgxMatTypeahead`
 
 ### @Inputs()
@@ -42,7 +42,7 @@
 ## Usage
 
 1) Register the `NgxMatTypeaheadModule` in your app module.
- > `import { NgxMatTypeaheadModule } from 'NgxMatTypeahead'`
+ > `import { NgxMatTypeaheadModule } from 'ngx-mat-typeahead'`
 
  ```typescript
  import { HttpClientModule } from '@angular/common/http';
@@ -51,7 +51,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule, MatInputModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgxMatTypeaheadModule } from 'NgxMatTypeahead';
+import { NgxMatTypeaheadModule } from 'ngx-mat-typeahead';
 import { AppComponent } from './app.component';
 
 @NgModule({
