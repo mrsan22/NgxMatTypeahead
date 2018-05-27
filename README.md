@@ -1,12 +1,18 @@
 # NgxMatTypeahead
 
-* A simple typeahead directive to be used with Angular Material input and matAutocomplete component.
+* A simple typeahead `directive` to be used with Angular Material input and matAutocomplete component.
 * This directives enhances the funtionality of Angular Material `matAutocomplete` component and is recommended that it is used with it.
 * However, this directive can be used with `any other` autocomplete component.
 * It is developed using `Angular >=6.0.0` and its newly introduced `ng g library` schematics.
 * This library is part of MatTypeahead project and it is generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
+## Examples/Demo
+
+A simple Example can be found under `src/app` directory of this repository.
+TODO: For seeing the example on Stackblitz Click here.
+
 ## Installation
+
 TODO: Add npm i NgxMatTypeahead
 
 ## API
@@ -14,7 +20,7 @@ TODO: Add npm i NgxMatTypeahead
 `import { NgxMatTypeaheadModule } from 'NgxMatTypeahead'`<br>
 `selector: NgxMatTypeahead`
 
-### Inputs
+### @Inputs()
 
 | Input            | Type    | Required                   | Description                                                                                               |
 | ---------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -27,7 +33,7 @@ TODO: Add npm i NgxMatTypeahead
 | callbackFuncName | string  | Optional                   | a string value for the callback query parameter.                                                          |
 | allowEmptyString | boolean | Optional, default: true    | if true, it allows empty strings to pass and invoke search                                                |
 
-### Outputs
+### @Outputs()
 
 | Output           | Type       | Required | Description                                            |
 | ---------------- | ---------- | -------- | ------------------------------------------------------ |
@@ -110,13 +116,10 @@ export class AppComponent implements OnInit {
 }
 ```
 
-## Demo
-A simple Example can be found under `src/app` directory of this repository.
-TODO: For seeing the example on Stackblitz Click here.
-
 ## Development server
 
-Run `ng serve` for a dev server and running the demo app. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Run `ng serve` for a dev server and running the demo app. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* The demo app uses `json-server` module for enabling the url and filter funtionality.
 
 ## Build the NgxMatTypeahead module
 
@@ -127,3 +130,5 @@ Run `ng build NgxMatTypeahead` to build the library. The build artifacts will be
 Run `ng test NgxMatTypeahead` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Credits
+
+This project is based on [ngx-typeahead](https://github.com/orizens/ngx-typeahead). I want to thank Oren Farhi from [Orizens](http://orizens.com) for open sourcing his project as it helped me to write my first simple Angular library. Also want to thanks entire Angular(https://angular.io) team for creating this awesome framework.
