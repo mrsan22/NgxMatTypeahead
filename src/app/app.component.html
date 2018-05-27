@@ -1,4 +1,4 @@
-<h2>NgxMatTypeahead demo app using Angular Material</h2>
+<h2>NgxMatTypeahead demo app using Angular Material Input and matAutocomplete component (v6)</h2>
 <br/>
 <h3>Simple Example</h3>
 <div [formGroup]="testFormGroup">
@@ -24,3 +24,9 @@
     </mat-autocomplete>
   </mat-form-field>
 </div>
+
+<p>Please Note: In this example if you filter by letter
+  <b>u</b>, you will see 3 countries (USA, UK and Russia) as filtered output instead of 2 countries (USA, UK). This is because
+  of the filter logic implemented by
+  <u>json-server</u>. In real app scenario, the filter logic will be handled on the backend and output should be correct.
+</p>
