@@ -24,8 +24,8 @@
     "@angular/router": "^6.0.2",
     "core-js": "^2.5.4",
     "json-server": "^0.12.2",
-    "ngx-mat-typeahead": "^1.0.0",
-    "rxjs": "^6.0.0",
+    "ngx-mat-typeahead": "^1.0.2",
+    "rxjs": "6.3.3",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
@@ -48,7 +48,7 @@
     "ng-packagr": "^3.0.0-rc.2",
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
-    "tsickle": ">=0.25.5",
+    "tsickle": "0.25.5",
     "tslib": "^1.7.1",
     "tslint": "~5.9.1",
     "typescript": "~2.7.2"
