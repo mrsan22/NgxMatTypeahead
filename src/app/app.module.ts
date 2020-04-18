@@ -20,9 +20,9 @@ import { AppComponent } from './app.component';
     MatInputModule,
     MatAutocompleteModule,
     HttpClientModule,
-    NgxMatTypeaheadModule
+    NgxMatTypeaheadModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
