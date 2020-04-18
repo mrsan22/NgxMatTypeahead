@@ -1,32 +1,49 @@
-<h2>NgxMatTypeahead demo app using Angular Material Input and matAutocomplete component (v6)</h2>
-<br/>
+<h2>NgxMatTypeahead demo app using Angular Material Input and matAutocomplete component (v9)</h2>
+<br />
 <h3>Simple Example</h3>
 <div [formGroup]="testFormGroup">
   <mat-form-field>
-    <input matInput NgxMatTypeahead [apiURL]="url" [urlQueryParam]="queryParam" (filteredDataList)="getFilteredSuggestions($event)"
-      formControlName="country" [matAutocomplete]="countryAuto" placeholder="Choose Country">
+    <input
+      matInput
+      NgxMatTypeahead
+      [apiURL]="url"
+      [urlQueryParam]="queryParam"
+      (filteredDataList)="getFilteredSuggestions($event)"
+      formControlName="country"
+      [matAutocomplete]="countryAuto"
+      placeholder="Choose Country"
+    />
     <mat-autocomplete #countryAuto="matAutocomplete">
       <mat-option *ngFor="let country of countries" [value]="country">
-        {{country}}
+        {{ country }}
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>
-  <br/>
-  <h3>Example with
-    <i>allowEmptyString</i> set as false.</h3>
+  <br />
+  <h3>Example with <i>allowEmptyString</i> set as false.</h3>
   <mat-form-field>
-    <input matInput NgxMatTypeahead [apiURL]="url" [urlQueryParam]="queryParam" [allowEmptyString]="false" (filteredDataList)="getFilteredSuggestions($event)"
-      formControlName="country" [matAutocomplete]="countryAuto" placeholder="Choose Country">
+    <input
+      matInput
+      NgxMatTypeahead
+      [apiURL]="url"
+      [urlQueryParam]="queryParam"
+      [allowEmptyString]="false"
+      (filteredDataList)="getFilteredSuggestions($event)"
+      formControlName="country"
+      [matAutocomplete]="countryAuto"
+      placeholder="Choose Country"
+    />
     <mat-autocomplete #countryAuto="matAutocomplete">
       <mat-option *ngFor="let country of countries" [value]="country">
-        {{country}}
+        {{ country }}
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>
 </div>
 
-<p>Please Note: In this example if you filter by letter
-  <b>u</b>, you will see 3 countries (USA, UK and Russia) as filtered output instead of 2 countries (USA, UK). This is because
-  of the filter logic implemented by
-  <u>json-server</u>. In real app scenario, the filter logic will be handled on the backend and output should be correct.
+<p>
+  Please Note: In this example if you filter by letter <b>u</b>, you will see 3 countries (USA, UK and Russia) as
+  filtered output instead of 2 countries (USA, UK). This is because of the filter logic implemented by
+  <u>json-server</u>. In real app scenario, the filter logic will be handled on the backend and output should be
+  correct.
 </p>

@@ -1,13 +1,14 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatAutocompleteModule, MatInputModule } from '@angular/material';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Local import from projects/ngx-mat-typeahead.
-// import { NgxMatTypeaheadModule } from 'NgxMatTypeahead';
+import { NgxMatTypeaheadModule } from 'NgxMatTypeahead';
 // Import from node_modules.
-import { NgxMatTypeaheadModule } from 'ngx-mat-typeahead';
+// import { NgxMatTypeaheadModule } from 'ngx-mat-typeahead';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -20,9 +21,9 @@ import { AppComponent } from './app.component';
     MatInputModule,
     MatAutocompleteModule,
     HttpClientModule,
-    NgxMatTypeaheadModule
+    NgxMatTypeaheadModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

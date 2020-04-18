@@ -1,5 +1,7 @@
 # NgxMatTypeahead
 
+**Update**: This library is Ivy Compatible and is tested against an Angular 9 app. (check example section below)
+
 * A simple typeahead `directive` to be used with Angular Material input and matAutocomplete component.
 * This directives enhances the funtionality of Angular Material `matAutocomplete` component and is recommended that it is used with it.
 * However, this directive can be used with `any other` autocomplete component.
