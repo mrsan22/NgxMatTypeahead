@@ -1,5 +1,7 @@
 # NgxMatTypeahead
 
+**Update**: This library is Ivy Compatible and is tested against an Angular 9 app. (check example in angular_v9 branch)
+
 * A simple typeahead `directive` to be used with Angular Material input and matAutocomplete component.
 * This directives enhances the funtionality of Angular Material `matAutocomplete` component and is recommended that it is used with it.
 * However, this directive can be used with `any other` autocomplete component.
@@ -120,7 +122,8 @@ export class AppComponent implements OnInit {
 
 * `npm i`
 * Run `ng serve` for a dev server and running the demo app. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-* The demo app uses `json-server` module for enabling the url and filter funtionality.
+* The demo app uses `json-server` module for enabling the url and filter funtionality. Make sure you have [json-server](https://www.npmjs.com/package/json-server#getting-started) installed and running.
+* Once you have installed json-server, Run: `json-server --watch db.json`. You can see it running at `http://localhost:3000`.
 
 ## Build the NgxMatTypeahead module
 
